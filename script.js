@@ -110,7 +110,7 @@ const triangle = function(v1, t1, v2, t2) {
         let leg = (t1 === "leg" ? v1 : v2);
         let angle = (t1 === "adjacent angle" ? v1 : v2);
         let res = LegAndAdjacentAngle(leg, angle);
-        return res[0] ? "success" : res[1]; // <-- fixed
+        return res[0] ? "success" : res[1];
     }
 
     if ((t1 === "leg" && t2 === "opposite angle") || (t1 === "opposite angle" && t2 === "leg")) {
