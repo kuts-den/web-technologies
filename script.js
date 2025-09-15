@@ -4,7 +4,7 @@ const toRad = deg => deg * Math.PI / 180;
 const toDeg = rad => rad * 180 / Math.PI;
 
 function validateTriangle(a, b, c, alpha, beta) {
-    // перевіряємо чи всі значення скінченні
+
     if (![a, b, c, alpha, beta].every(v => Number.isFinite(v))) {
         return [false, "Non-finite value (NaN or Infinity)"];
     }
